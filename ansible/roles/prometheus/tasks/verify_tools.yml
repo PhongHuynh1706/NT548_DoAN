@@ -1,0 +1,11 @@
+﻿---
+- name: Verify required tools are installed
+  ansible.builtin.command:
+    argv:
+      - "{{ item }}"
+      - "--version"
+  loop:
+    - aws
+    - kubectl
+    - helm
+  changed_when: false

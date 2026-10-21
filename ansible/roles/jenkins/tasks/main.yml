@@ -5,6 +5,9 @@
 - name: Install Java runtime
   ansible.builtin.import_tasks: java.yml
 
+- name: Install Git and Maven
+  ansible.builtin.import_tasks: build-tools.yml
+
 - name: Install Jenkins
   ansible.builtin.import_tasks: jenkins.yml
 

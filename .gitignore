@@ -1,4 +1,4 @@
 **/inventory/hosts.ini
 
-jenkins-key.pem
-
+*.pem
+*.key
